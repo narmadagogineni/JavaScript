@@ -52,3 +52,24 @@ for (let i=students.length-1; i>=0; i--) {
         console.log(j, students[i][j]);
     }
 } 
+------------------------------------------------------------------------------------
+//FOR OF LOOP
+    //elements
+let fruits = ["mango", "apple", "orange", "melon"];
+
+for (fruit of fruits) {
+    console.log(fruit)
+}
+
+--------------------------------------------------------------------------------
+//characters
+    for (char of "Narmadagogineni") {
+    console.log(char)
+}
+
+=-----------------------------------------------------------------------------------
+
+
+
+
+    
