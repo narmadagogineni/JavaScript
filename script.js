@@ -41,3 +41,14 @@ for (let i=0; i<students.length; i++) {
 } 
 
 ---------------------------------------------------------------------------------------
+
+//revserse
+    
+let students = [["simmu", 78],["hemu", 95],["Nammu", 90]];
+
+for (let i=students.length-1; i>=0; i--) {
+    console.log(i, students[i]);
+    for (let j=students[i].length-1; j>=0; j--) {
+        console.log(j, students[i][j]);
+    }
+} 
