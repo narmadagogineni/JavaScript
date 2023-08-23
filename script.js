@@ -116,14 +116,14 @@ isAdult();
 
 --------------------------------------------------------------------------------------------------------
 
-function Poem() {
+function poem() {
     console.log("TWINKE TWNIKLE, LITTLE STAR");
     console.log("HOW I WONDER WHAT YOU ARE!");
     console.log("UP ABOVE THE WHY SO HIGH ");
     console.log("LIKE A DIAMOND IN THE SKY");
 }
 
-Poem();
+poem();
 
 function diceRoll() {
     let rand = Math.floor(Math.random() * 6) + 1;
@@ -134,4 +134,53 @@ diceRoll();
 
 ------------------------------------------------------------------------------------------------------
 
-    
+    function printName(name) {
+    console.log(name);
+}
+
+printName("Nammu");
+--------------------------------------------------------------
+function printInfo(name, age) {
+    console.log(`${name}'s age is ${age}`);
+}
+
+printInfo("Hemu", 23);
+printInfo("Nammu");
+
+---------------------------------------------------------
+function sumOfTwoNum(a, b) {
+    let sum = a+b;
+    console.log(sum);
+}
+
+sumOfTwoNum(2, 4);
+sumOfTwoNum(9, 3);
+sumOfTwoNum(17, 83);
+--------------------------------------------------------
+function calcSum(a, b, c) {
+    let avg = (a + b + c )/3
+    console.log(avg);
+}
+
+calcSum(30,60,90);
+calcSum(70,20,10);
+--------------------------------------------------------
+function printTable(n) {
+    for (let i=1; i<=10; i++) {
+        console.log(`${n}X${i}=${i*n}`);
+        // console.log(i);
+        }
+}
+
+printTable(5);
+printTable(7);
+
+-------------------------------------------------------
+function multiTable(n) {
+    for(let i=n; i<=n*10; i=i+n) {
+        console.log(i);
+    }
+}
+
+multiTable(8);
+multiTable(17);
