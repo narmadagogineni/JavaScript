@@ -116,4 +116,22 @@ isAdult();
 
 --------------------------------------------------------------------------------------------------------
 
+function Poem() {
+    console.log("TWINKE TWNIKLE, LITTLE STAR");
+    console.log("HOW I WONDER WHAT YOU ARE!");
+    console.log("UP ABOVE THE WHY SO HIGH ");
+    console.log("LIKE A DIAMOND IN THE SKY");
+}
+
+Poem();
+
+function diceRoll() {
+    let rand = Math.floor(Math.random() * 6) + 1;
+    console.log(rand);
+}
+
+diceRoll();
+
+------------------------------------------------------------------------------------------------------
+
     
