@@ -81,6 +81,39 @@ for(let i=0; i<arr.length; i++) {
 
 console.log(arr);
 
+----------------------------------------------------------------------------------------------
+    //FUNCTIONS 
 
+function Hello() {
+    console.log("Hello");
+}
+
+function printName() {
+    console.log("Nammu");
+    console.log("Hemu");
+}
+
+function print1to5() {
+    for (let i=1; i<=5; i++) {
+        console.log(i); 
+    }
+}
+
+function isAdult() {
+    let age = 16;
+    if (age>=18) {
+        console.log("Adult");
+    } else {
+        console.log("not an adult");
+    }
+}
+
+
+Hello();
+printName();
+print1to5();
+isAdult();
+
+--------------------------------------------------------------------------------------------------------
 
     
