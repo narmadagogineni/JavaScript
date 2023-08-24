@@ -316,4 +316,22 @@ console.log(greet);
 changeGreet();
 
 -------------------------------------------------------------------------------------
-    
+//FUNCTION EXPRESIONS OR NAMELESS FUNCTIONS - 
+//which gives properties of variable to function
+
+let sum = function(a,b) {
+    return a + b;
+}
+
+console.log(sum(3,6));
+
+let greet = function() {
+    console.log("hello");
+}
+
+greet = function() {
+    console.log("namaste");
+}
+
+greet();  
+=-----------------------------------------------------------------
