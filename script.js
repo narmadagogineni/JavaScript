@@ -299,6 +299,21 @@ console.log(greet);
 changeGreet();
 
 ----------------------------------------------------------------------------------
+//Ex-2
 
-    
+let greet = "Hello";
+
+function changeGreet() {
+    let greet = "Namaste";
+    console.log(greet);
+    function innerGreet() { 
+        console.log(greet); 
+    }
+    innerGreet(); //namsste due to lexical scope
+}  
+
+console.log(greet);
+changeGreet();
+
+-------------------------------------------------------------------------------------
     
