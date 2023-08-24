@@ -184,3 +184,77 @@ function multiTable(n) {
 
 multiTable(8);
 multiTable(17);
+----------------------------------------------------
+//RETURN KEYWORD
+
+ function getSum(n) {
+    let sum=0;
+        for (let i=1; i<=n; i++) {
+            sum = sum+i;
+        }
+        return sum;
+}
+
+console.log(getSum(8));
+console.log(getSum(34));
+------------------------------------------------------
+
+let arr = ["hello", "hi", "bye", "bye"];
+
+function concStr(arr) {
+    let result = "";
+
+    for (let i=0; i<arr.length; i++) {
+        result += arr[i];
+    }
+    return result;
+}
+
+console.log(concStr(arr));
+
+----------------------------------------------------------
+
+function calSum(a, b) {
+    let sum = a+b;
+    console.log(sum);
+}
+
+calSum(3,6);
+---------------------------------------------------
+
+
+function sum2(a, b) {
+    let sum = a+b;
+    return sum;
+}
+
+console.log(sum2(3,7));    
+------------------------------------------------
+
+    //GLOBAL AMD FUNCTION SCOPE
+    
+let sum = 45;  //global scope
+
+function add(a, b) {
+    let sum = a+b;  //func scope
+    console.log(sum); //prints local var
+}
+
+add(3,7);
+console.log(sum);  //prints global var
+
+-----------------------------------------------------
+
+let sub = 7;
+ 
+function minus(a,b) {
+    // let sub = a-b;  //local
+    console.log(sub); 
+}
+
+minus(8, 4);
+
+------------------------------------------------------
+    
+
+    
