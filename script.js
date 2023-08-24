@@ -271,5 +271,18 @@ minus(8, 4);
 }
 ---------------------------------------------------------------------
 
+// BLOCK SCOPE
 
+function str() {
+    let a = "apple";
+    console.log(a);  //accesible
+}   // end of function scope, so the variable 'a' is no longer accessible outside this block.
+
+str();
+// console.log(a);  //not accessible
+
+---------------------------------------------------------------------------------------
+
+
+    
     
