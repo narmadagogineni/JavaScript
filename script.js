@@ -283,6 +283,22 @@ str();
 
 ---------------------------------------------------------------------------------------
 
+//Ex - INCLUDES GLOBAL , FUNCTION & LEXICAL SCOPEs   
+    
+let greet = "Hello";
+
+function changeGreet() {
+    let greet = "Namaste";
+    console.log(greet);
+    function innerGreet() {
+        console.log(greet); //doesnt gets executed bcx we didnt call innerGreet
+    }
+}
+
+console.log(greet);
+changeGreet();
+
+----------------------------------------------------------------------------------
 
     
     
