@@ -255,6 +255,21 @@ function minus(a,b) {
 minus(8, 4);
 
 ------------------------------------------------------
+
+//LEXICAL SCOPE 
     
+ function outerFunc() {
+    let x=9;
+    let y=3;
+    function innerFunc() {
+        let a= 5;
+        console.log(x);
+        console.log(a);
+    }
+    // console.log(a);      //not accessible outside innerfunc 
+    innerFunc();
+}
+---------------------------------------------------------------------
+
 
     
