@@ -12,8 +12,6 @@ for (let i=0; i<movies.length; i++) {
     }
 }
 
-
-
 --------------------------------------------------------------------------------------
 
 //backwards
@@ -335,3 +333,50 @@ greet = function() {
 
 greet();  
 =-----------------------------------------------------------------
+
+    //HIGHER ORDER FUNCTIONS
+
+function multipleGreet(func, n) {
+    for (let i=1; i<=n; i++) {
+        func();
+    }
+}
+
+let greet = function() {
+    console.log("Hello");
+}
+
+multipleGreet(greet,2);
+
+--------------------------------------------------
+
+ //HIGHER ORDER FUNCTION (RETURNS)
+
+function evenOddNumTest(request) {
+    if (request == "odd") {
+        return function(n) {
+            console.log((n%2 != 0));
+        }
+    } else if (request == "even") {
+        return function(n) {
+            console.log(n%2 == 0);
+        }
+    } else {
+        console.log("wrong request")
+    }
+}
+
+let request = "even";    
+// let request = "even";
+
+// IN CONSOLE
+
+//request; - prints odd
+//let func = evenOddNumTest(request);- prints undefined
+//func; - prints odd func 
+// func(3); - prints odd
+// func(50); -prints even
+
+----------------------------------------------------------------------
+
+    
