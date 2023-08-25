@@ -378,5 +378,96 @@ let request = "even";
 // func(50); -prints even
 
 ----------------------------------------------------------------------
+//UNIQUE CHAR OF STRING
+    
+let str = "abccddeegghhnblbl"
+
+function getUnique(str) {
+    let newStr = "";
+    for (let x=0; x<str.length; x++) {
+        if(newStr.indexOf(str.charAt(x))==-1) {
+            newStr = newStr+str[x];
+        }          
+    }
+    return newStr;
+}
+
+console.log(getUnique(str));  
+------------------------------------------------------
+    //UNIQUE CHAR OD STRING METHOD 2
+
+ let str ="2andos23slkslawoo21";
+let newStr ="";
+
+function getUnique(str) {
+    for(i=0; i<str.length; i++) {
+        let currChar = str[i];
+        if(newStr.indexOf(currChar) == -1) {
+            newStr = newStr + currChar;
+        }
+    }
+    return newStr;
+}
+
+console.log(getUnique(str));
+-------------------------------------------------
+    
+//nums greater than 5
+    
+let arr = [4,5,6,7,1,2,8,3,6];
+let num = 5;
+
+function getElements(arr, num) {
+    for(let i=0; i<arr.length; i++) {
+        if(arr[i]> num) {
+            console.log(arr[i]);
+        }
+    }
+}
+
+getElements(arr, num);   
+---------------------------------------------------
+
+    //LONGEST country name
+
+let country = ["Austria", "USA", "Hindustan", "Germany"];
+
+function longestName(country) {
+    let ansIdx = 0;
+    for(let i = 0; i<country.length; i++) {
+        let ansLen =country[ansIdx].length;
+        let currLen = country[i].length;
+        if (currLen>ansLen) {
+            ansIdx = i;
+        }
+    }
+    return country[ansIdx];
+}
+
+console.log(longestName(country));
+------------------------------------------------------------------
+
+    //VOWELS IN given string
+    
+let str ="narmadagogineni";
+
+
+function vowelCount(str) {
+    let count = 0;
+    for(let i=0; i<str.length; i++) {
+        if(
+            str.charAt(i) == "a" ||
+            str.charAt(i) == "e" ||
+            str.charAt(i) == "i" ||
+            str.charAt(i) == "o" ||
+            str.charAt(i) == "u" 
+        ) {
+            count++;
+        }
+    }
+    console.log(count);  
+}
+vowelCount(str);
+---------------------------------------------------------------------
 
     
