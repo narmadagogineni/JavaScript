@@ -531,3 +531,54 @@ clearInterval(id);
 clearInterval(id2);
 
 ------------------------------------------------------------
+
+    //THIS WITH ARROW FUNCTIONS
+
+const student = {
+    name: "Narmada",
+    age: 21,
+    marks: 97,
+    prop: this,
+    getName: function() {
+        console.log(this); //global scope and functional scope and prints (student)
+        return this.name;
+    },
+    getMarks: () => {
+        console.log(this);  //parents scope - lexical scope and prints (window)
+        return this.marks;
+    },
+};  
+
+-------------------------------------------------------------------------------------------
+
+    //THIS WITH ARROW FUNCTIONS
+
+const student = {
+    name: "Narmada",
+    age: 21,
+    marks: 97,
+    prop: this,
+    getName: function() {
+        console.log(this); //global scope and functional scope and prints (student)
+        return this.name;
+    },
+    getMarks: () => {
+        console.log(this);  //parents scope - lexical scope and prints (window)
+        return this.marks;
+    },
+    getInfo1: function () {
+        setTimeout( function () {  
+            console.log(this);       //window->setTimeout's parent is window since settimeout is inbuilt func
+        }, 2000);
+    },
+    getInfo2:function () {
+        setTimeout(() => {           
+            console.log(this);       //parent(student) since settimeout's parent is function and func parent is student
+        }, 2000);
+    },
+};  
+
+------------------------------------------------------------------------------------------------------------------------------
+
+
+    
