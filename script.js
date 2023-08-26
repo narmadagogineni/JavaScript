@@ -515,3 +515,19 @@ setTimeout( () => {
 console.log("welcome to...");
 
 ----------------------------------------------------
+// SET INTERVAL
+
+let id = setInterval(()=>{
+    console.log("Helo world");
+}, 2000);
+
+let id2 = setInterval(() => {
+    console.log("bye");
+}, 2000);
+
+// to clear  interval
+
+clearInterval(id);
+clearInterval(id2);
+
+------------------------------------------------------------
