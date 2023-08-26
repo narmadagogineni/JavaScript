@@ -1,4 +1,4 @@
-
+ 
 //LOOPS IN ARRAYS
 let movies = [
     ["mirchi", "mr perfect", "darling"],
@@ -590,6 +590,35 @@ setTimeout(() => {
     console.log("cleared");
 }, 10000);
 ----------------------------------------------------------------
+//AVG OF AN ARRAY
 
+const arrAvg = (arr) => {
+    let total =0;
+    for(let i of arr) {
+        total +=i;
+    }
+    return total/arr.length;
+ }
+
+ let arr = [1,2,3];
+ console.log(arrAvg(arr));
+-------------------------------------------------------------------
+//even or odd
+
+const isEven = (num) => {
+    if(num%2 == 0){
+        console.log("even");
+    } else {
+        console.log("odd");
+    };
+};
     
-    
+--------------------------------------------------------
+
+    //even or odd
+
+let num = 4;
+
+const isEven = (num) => (num%2 == 0);
+
+-------------------------------------------------------
