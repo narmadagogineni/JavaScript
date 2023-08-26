@@ -622,3 +622,20 @@ let num = 4;
 const isEven = (num) => (num%2 == 0);
 
 -------------------------------------------------------
+
+ const object = {
+    message: "Hello world",
+
+    logMessage() {
+        console.log(this.message);
+    }
+};
+
+setTimeout(object.logMessage, 1000);
+
+//o/p console -> undefined
+------------------------------------------------------
+
+ 
+
+ 
