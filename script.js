@@ -579,6 +579,17 @@ const student = {
 };  
 
 ------------------------------------------------------------------------------------------------------------------------------
+//PRINT HELLO WORLD 5 TIMES & CLEAR INTERVAL AFTER 10 SEC 
+    
+let id = setInterval(() => {
+    console.log("Helo wrld");
+}, 2000);
 
+setTimeout(() => {
+    clearInterval(id);
+    console.log("cleared");
+}, 10000);
+----------------------------------------------------------------
 
+    
     
