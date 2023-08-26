@@ -469,5 +469,49 @@ function vowelCount(str) {
 }
 vowelCount(str);
 ---------------------------------------------------------------------
+//Arrow functions
+
+const pow = (a, b) => {
+    return a**b;
+}
+
+const sum = (c, d) => {
+    return a+b;
+}
+
+const cube = (n) => {
+    return n * n * n;
+};
+
+const hello = () => {
+    console.log("Hello World!");
+}
+
+---------------------------------------------------------------
 
     
+//implicit return in arrow functions
+
+const mul = (a , b) => (a * b);
+mul(3,5);
+
+const sum = (a, b) => (a+b);
+
+const pow = (a, b) => (a**b);
+
+const cube = (n) => (n*n*n);
+
+---------------------------------------------------------
+
+
+    // SET TIMEOUT
+
+console.log("Hi there,");
+
+setTimeout( () => {
+    console.log("My Application");
+}, 4000);
+
+console.log("welcome to...");
+
+----------------------------------------------------
